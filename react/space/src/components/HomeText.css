@@ -1,0 +1,31 @@
+.travel {
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 136px);
+  width: 500px;
+  margin-bottom: 150px;
+  margin-left: 150px;
+  gap: 1rem;
+}
+.con > h1 {
+  color: white;
+  font-size: 10rem;
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.con > span {
+  color: #d0d6f9;
+  margin: 0;
+  line-height: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+}

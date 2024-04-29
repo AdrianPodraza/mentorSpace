@@ -1,14 +1,41 @@
-.nav{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:96px;
-    background-color:white;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    margin-top:40px;
-    
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  margin-top: 40px;
+  gap: 36px;
+  color: white;
+  width: 60%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.stripe {
+  width: 55%;
+  height: 1px;
+  background-color: #979797;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+}
+.logo {
+  position: absolute;
+  left: -60%;
+}
+.number {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.name {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
 }

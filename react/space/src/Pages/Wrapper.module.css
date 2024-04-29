@@ -1,9 +1,4 @@
-.wrapper{
-    margin:0;
-    padding:0;
-    background-image:url(./../../public/images/background-home-desktop.jpg);
-    height:100vh;
-    float:right;
-    background-size:cover;
-    width:100%;
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
