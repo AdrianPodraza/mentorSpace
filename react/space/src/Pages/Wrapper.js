@@ -1,16 +1,13 @@
 import React from "react";
-import styles from "./Wrapper.module.css";
-import NavBar from "../components/NavBar";
+import { useEffect } from "react";
+
 import HomeText from "../components/HomeText";
 function Wrapper() {
-  return (
-    <>
-      <div className={styles.wrapper}>
-        <NavBar />
-      </div>
-      <HomeText />
-    </>
-  );
+  useEffect(() => {
+    document.body.style.backgroundImage =
+      "url(./images/background-home-desktop.jpg)";
+  }, []);
+  return <HomeText />;
 }
 
 export default Wrapper;

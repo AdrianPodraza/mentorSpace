@@ -1,9 +1,6 @@
+import Logo from "./Logo.js";
 import NavItem from "./NavItem";
-import Logo from "./Logo";
-
-import React from "react";
-import "./NavBar.css";
-function NavBar() {
+function HamburgerNav() {
   return (
     <div className="wrap">
       <div className="nav">
@@ -47,4 +44,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default HamburgerNav;

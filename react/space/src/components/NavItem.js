@@ -1,10 +1,24 @@
 import React from "react";
-function NavItem({ number, name }) {
+import { NavLink } from "react-router-dom";
+
+function NavItem({
+  path,
+  number,
+  name,
+  activeClass,
+  navItemClass,
+  nonActive = "",
+}) {
   return (
-    <div>
-      <span className="number">{number}</span>{" "}
-      <span className="name">{name}</span>
-    </div>
+    <NavLink
+      to={path}
+      className={({ isActive }) => (isActive ? activeClass : nonActive)}
+    >
+      <div className={navItemClass}>
+        {number && <span className="number">{number}</span>}
+        {name && <span className="name">{name}</span>}
+      </div>
+    </NavLink>
   );
 }
 

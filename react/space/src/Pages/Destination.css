@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
+.num-des {
+  color: #50525a;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-right: 28px;
+}
+.title-des {
+  color: white;
+  font-weight: 200;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.75rem;
+}
+.upper-des {
+  width: 100%;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+.planet-con-des {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 250px;
+  gap: 300px;
+}
+.description-des {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 445px;
+  min-width: 300px;
+}
+.planet-name {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 6.25rem;
+}
+
+.planet-description {
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 1.125;
+  line-height: 32px;
+}
+.planet {
+  width: 445px;
+}
+.stats {
+  display: flex;
+  gap: 72px;
+  border-top: 1px solid #383b4b;
+  margin-top: 50px;
+}
+.stats-con {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 25px;
+}
+.stats-con > p {
+  color: #d0d6f9;
+  font-weight: 200;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.stats-con > span {
+  color: #fff;
+  font-weight: 200;
+  font-family: "Bellefair", serif;
+  font-size: 1.75rem;
+}
+.nav-planet > div {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.nav-item-planet {
+  padding-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .planet {
+    width: 300px;
+    height: 300px;
+  }
+  .planet-con-des {
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 30px;
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .nav-planet > div {
+    justify-content: space-evenly;
+  }
+  .upper-des {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .planet-name {
+    font-size: 5rem;
+  }
+  .planet-description {
+    font-size: 1rem;
+  }
+}

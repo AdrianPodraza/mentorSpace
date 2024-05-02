@@ -1,16 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-#root {
+:root {
   height: 100vh;
+  --body-image: url(./../public/images/background-home-desktop.jpg);
+}
+html {
+  background-color: black;
 }
 body {
   margin: 0;
   padding: 0;
-  background-image: url(./../public/images/background-home-desktop.jpg);
+  background-image: var(--body-image);
   height: 100vh;
   background-size: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow: visible !important;
+  }
 }

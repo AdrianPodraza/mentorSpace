@@ -1,0 +1,93 @@
+.crew-con {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  gap: 20px;
+  margin-top: 150px;
+  max-width: 488px;
+  min-width: 300px;
+  position: relative;
+}
+.crew-status {
+  font-family: "Bellefair", sans-serif;
+  font-size: 2rem;
+  color: #8f9095;
+}
+.crew-name {
+  font-family: "Bellefair", sans-serif;
+  font-size: 3.5rem;
+  color: white;
+}
+.crew-desc {
+  color: #d0d6f9;
+  font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  line-height: 32px;
+}
+.crew-flex {
+  display: flex;
+}
+.crew-image-con {
+  position: absolute;
+  right: 400px;
+  bottom: -5px;
+}
+.crew-item-none-active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 15px;
+}
+.crew-item-none-active:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.crew-active {
+  background-color: #fff;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 15px;
+}
+.crew-nav {
+  display: flex;
+  gap: 24px;
+  bottom: 100px;
+  position: fixed;
+}
+.crew-bg {
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .upper-des {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .crew-image-con > img {
+    width: 200px;
+  }
+  .crew-image-con {
+    bottom: -50px;
+  }
+  .crew-flex {
+    text-align: center;
+  }
+  .crew-con {
+    margin-top: 50px;
+    margin-left: 150px;
+
+    align-items: center;
+  }
+  .crew-nav {
+    bottom: 350px;
+  }
+  .crew-name {
+    font-size: 2.5rem;
+  }
+  .crew-status {
+    font-size: 1.5rem;
+  }
+  .crew-desc {
+    font-size: 1rem;
+  }
+}

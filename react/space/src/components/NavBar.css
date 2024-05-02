@@ -10,7 +10,6 @@
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   margin-top: 40px;
   gap: 36px;
   color: white;
@@ -38,4 +37,41 @@
 .name {
   font-family: "Barlow", sans-serif;
   font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: white solid 4px;
+  transition: all 150ms ease;
+  height: 96%;
+  text-align: center;
+}
+.nav-item {
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.home-nav-nonActive:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 4px;
+  border-color: rgba(255, 255, 255, 0.5);
+  height: 96%;
+  transition: all 150ms ease;
+}
+@media (max-width: 1024px) {
+  .stripe {
+    display: none !important;
+  }
 }
