@@ -6,7 +6,6 @@
   margin-top: 150px;
   max-width: 488px;
   min-width: 300px;
-  position: relative;
 }
 .crew-status {
   font-family: "Bellefair", sans-serif;
@@ -27,12 +26,9 @@
 }
 .crew-flex {
   display: flex;
+  gap: 200px;
 }
-.crew-image-con {
-  position: absolute;
-  right: 400px;
-  bottom: -5px;
-}
+
 .crew-item-none-active {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -64,18 +60,16 @@
     margin-left: 50px;
   }
   .crew-image-con > img {
-    width: 200px;
+    width: 250px;
   }
-  .crew-image-con {
-    bottom: -50px;
-  }
+
   .crew-flex {
     text-align: center;
+    flex-direction: column;
   }
   .crew-con {
     margin-top: 50px;
     margin-left: 150px;
-
     align-items: center;
   }
   .crew-nav {
