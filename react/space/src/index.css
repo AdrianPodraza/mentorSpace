@@ -12,16 +12,43 @@ body {
   margin: 0;
   padding: 0;
   background-image: var(--body-image);
-  height: 100vh;
-  background-size: cover;
-  width: 100%;
+  height: auto;
+  background-size: auto;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
+
+
+  
+}
+.hamburger-logo{
+  display: none;
 }
 
-@media (max-width: 1024px) {
-  body {
-    overflow: visible !important;
+@media(max-width:667px){
+
+  .wrap{
+    display: none !important;
   }
+  .hamburger-logo{
+    display:flex;
+    justify-content: space-between !important;
+    margin-top:30px;
+  }
+  .logo{
+    position:relative !important;
+    left:10px !important;
+  }
+  .hamburger-icon{
+    margin-right:40px;
+    cursor:pointer;
+    
+  }
+  .hamburger-icon-close{
+    display:none;
+}
+.close{
+  cursor:pointer;
+}
 }

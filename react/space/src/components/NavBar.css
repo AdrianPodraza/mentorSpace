@@ -6,10 +6,10 @@
   justify-content: center;
   height: 96px;
   background-color: white;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
 
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   margin-top: 40px;
   gap: 36px;
   color: white;
@@ -33,6 +33,7 @@
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   margin-right: 8px;
+
 }
 .name {
   font-family: "Barlow", sans-serif;
@@ -56,11 +57,13 @@ a {
   height: 92px;
   justify-content: center;
   align-items: center;
+  
 }
 .wrap {
   display: flex;
   justify-content: flex-end;
 }
+
 .home-nav-nonActive:hover {
   display: flex;
   align-items: center;
@@ -74,4 +77,9 @@ a {
   .stripe {
     display: none !important;
   }
+  .number{
+    font-size:0.875rem;
+  }
+  .name{
+    font-size:0.875rem;}
 }

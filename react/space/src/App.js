@@ -4,10 +4,23 @@ import NavBar from "./components/NavBar";
 import Destination from "./Pages/Destination";
 import Crew from "./Pages/Crew";
 import Technology from "./Pages/Technology";
+import HamburgerLogo from "./components/HamburgerLogo";
+import HamburgerNav from "./components/HamburgerNav";
+import { useState } from "react";
 function App() {
+
+  const[hamburgerVisible,setHamburgerVisible] = useState(true);
+  const[showSideBar,setShowSideBar] = useState(false);
+
+  function handleClickMenu(){
+      setHamburgerVisible(state=>!state);
+      setShowSideBar(state=>!state);
+  }
   return (
     <BrowserRouter>
-      <NavBar />
+      <NavBar  />
+      <HamburgerLogo handleClickMenu={handleClickMenu} hamburgerVisible={hamburgerVisible}/>
+      <HamburgerNav handleClickMenu={handleClickMenu} showSideBar={showSideBar}/> 
       <Routes>
         <Route path="/home" element={<Wrapper />} />
         <Route path="/destination" element={<Destination />} />

@@ -2,6 +2,7 @@ import "./HomeText.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+
 function HomeText() {
   useEffect(() => {
     const tabletQuery = window.matchMedia("(max-width: 1024px)");
@@ -32,6 +33,7 @@ function HomeText() {
 
   return (
     <div className="home-con">
+    
       <div className="con">
         <span className="travel">SO, YOU WANT TO TRAVEL TO</span>
 

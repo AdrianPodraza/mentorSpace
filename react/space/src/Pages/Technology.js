@@ -76,14 +76,17 @@ function Technology() {
             <div className="technology-nav-con">
               <TechnologyNav />
             </div>
+            <div className="technology-spans">
+
             <span className="technology-title"> THE TERMINOLOGY...</span>
             <span className="crew-name">
-              {" "}
+              
               {selectedTech.name.toUpperCase()}
             </span>
             <span className="planet-description">
               {selectedTech.description}
             </span>
+            </div>
           </div>
           <div className="technology-img">
             <img src={selectedTech.images[imageStyle]} alt="rocket" />
